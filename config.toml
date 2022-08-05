@@ -1,0 +1,53 @@
+# 日志等级, 可选 INFO, DEBUG, ERROR. 默认 INFO
+log_level = "INFO"
+# 图片下载并发数. 默认 4
+threads_num = 4
+# 每隔多少秒检查一次，默认一小时
+interval = 3600
+# 数据库储存位置
+database_url = "db.sqlite"
+
+[exhentai]
+# E 站用户名
+username = "wink23"
+# E 站密码
+password = "xxr991211"
+# 可选, 使用 cookie 登录
+#cookie = "ipb_member_id=xx; ipb_pass_hash=xx; igneous=xx;"
+# 搜索 URL
+search_url = "https://exhentai.org"
+# 搜索参数
+search_params = [
+    ["f_cats", "704"],
+    ["f_search", "female:milf language:Chinese"]
+]
+# 上传前多少页的本子, 重复的会自动过滤
+max_pages = 2
+# 最大展示的图片数量
+max_img_cnt = 50
+# 超过多少天后更新的本子将重新发送消息
+outdate = 14
+# [可选] 代理
+#proxy = "socks5://127.0.0.1:1234"
+
+[telegraph]
+# telegraph 账号 token
+access_token = "ffcf307f8210afa7e03da2736cae333fffe0ff14d2993d1ea4cc438f322a"
+# 作者名称
+author_name = "winkmoyu"
+# 作者地址(通常为频道链接)
+author_url = "https://t.me/moyuben"
+# [可选] 代理
+#proxy = "socks5://127.0.0.1:1234"
+
+[telegram]
+# telegram 频道 ID, 公共频道直接 @+频道名, 私有频道需要需要获取数字格式的 id
+channel_id = "@moyuben"
+# 机器人 token
+token = "5104919163:AAFZaGwp-JJGcPGJN4YFrIyvAwr5LiBAl14"
+# 机器人 ID
+bot_id = "@moyunstatus_bot"
+# telegram 频道对应讨论组的 ID，暂时只能为数字
+group_id = -1001582767389
+# 受信用户，拥有除了删本以外的权限
+trusted_users = [""]
